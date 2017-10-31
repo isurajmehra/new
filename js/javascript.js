@@ -1,10 +1,12 @@
 
-document.querySelector('a-assets').addEventListener('loaded', function () {
-  console.log("OK LOADED");
+
+
+
+ $(document).ready(function() {
+ 	document.querySelector('a-assets').addEventListener('loaded', function () {
+  $(".bubblingG").hide();
 });
-
-
-// $(document).ready(function() {
+ });
 
 // 	var cloth = document.querySelector("a-obj-model#clothes");
 
