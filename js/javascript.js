@@ -1,5 +1,7 @@
 
-
+document.querySelector('a-assets').addEventListener('loaded', function () {
+  console.log("OK LOADED");
+});
 
 
 // $(document).ready(function() {
