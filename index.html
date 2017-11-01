@@ -50,7 +50,7 @@
 
       <img id="groundTexture" src="img/floor.png">
 
-      <a-asset-item id="sky" src="img/sky1.jpg"></a-asset-item>
+      <a-asset-item id="sky" src="img/city.jpg"></a-asset-item>
 
 <!--       <a-asset-item id="barrel" src="img/obj/barrels/barrels_edited.obj"></a-asset-item>
 
@@ -71,8 +71,9 @@
       <a-asset-item id="stall2" src="img/new/GNPC+OWA+11+revised+15+3+13/model.dae"></a-asset-item>
       <a-asset-item id="food1" src="img/new/4HotdogStand_BurmaS/model.dae"></a-asset-item>
       <a-asset-item id="gate" src="img/new/Carpenteria+tunnel+collegamento/model.dae"></a-asset-item>
-      <a-asset-item id="reception" src="img/new/Reception+Desk/model.dae"></a-asset-item>
-
+      <a-asset-item id="reception" src="img/new/Reception+Desk/model_1.dae"></a-asset-item>
+      <img id="banner1" src="img/front-banner1.jpg">
+      <img id="banner2" src="img/front-banner2.jpg">
     </a-assets>
 
     <!-- <a-box src="#wall" rotation="0 0 0" position="0 1 -5" width="1" height="2" depth="1">
@@ -114,11 +115,19 @@
     <a-entity collada-model="#stall2" position="-9.632 0 33.163" rotation="0 -75.000 0" scale="2.0 2.0 2.0"></a-entity>
     <a-entity collada-model="#gate" position="9.056 2.717 147.631" rotation="0 30.000 0" scale="2.0 2.0 2.0"></a-entity>
     <a-entity collada-model="#food1" position="25.194 0 24.613" rotation="0 50.000 0" scale="3.0 3.0 3.0"></a-entity> 
-    <a-entity collada-model="#reception" position="52.316 0 71.660" rotation="0 -20.000 0" scale="3.0 3.0 3.0"></a-entity> 
+    <a-entity collada-model="#reception" position="4.030 0 -33.299" rotation="0 -20.000 0" scale="3.0 3.0 3.0"></a-entity>
+    <a-image src="#banner1" position="40.763 2.031 114.796" rotation="0 25.000 0" scale="3 3 3"></a-image>
+
+    <a-image src="#banner2" position="28.636 2.031 122.401" rotation="0 25.000 0" scale="3 3 3"></a-image>
+    <a-image src="#banner1" position="34.409 2.031 119.087" rotation="0 30.000 0" scale="3 3 3"></a-image>
+    <a-image src="#banner2" position="22.482 2.031 126.078" rotation="0 30.000 0" scale="3 3 3"></a-image>
+    <a-image src="#banner1" position="16.117 2.031 129.962" rotation="0 30.000 0" scale="3 3 3"></a-image>
+    <a-image src="#banner2" position="9.710 2.031 134.051" rotation="0 30.000 0" scale="3 3 3"></a-image>
+    <a-image src="#banner1" position="4.926 2.031 137.077" rotation="0 30.000 0" scale="3 3 3"></a-image>
     <!-- <a-entity collada-model="#stall1" position="25.388 0 29.337" rotation="0 30 0" scale="2.0 2.0 2.0"></a-entity> -->
 
      <!-- <a-text text="value:welcome to Nutrition & wellness expo; width:100;" position="-11.51 8.43 -24.91"></a-text> -->
-<a-text text="align:center;side:double;value:welcome to Nutrition\n&amp; wellness expo;width:70;wrapCount:42.82" position="23.965 11.669 142.589" rotation="0 -60 0"></a-text>
+<a-text text="align:center;side:double;value:Welcome to Nutrition\n&amp; Wellness Expo;width:70;wrapCount:42.82; color:green" position="23.965 11.669 142.589" rotation="0 -60 0"></a-text>
    <!-- <a-text visible="false" id="clotheText" text="value:CLOTHES; width:15;" position="1.94 1.90 18.61" rotation="0 270 0"></a-text> -->
 
     <!-- <a-entity class="text" visible="true" text-geometry="value:CLOTHES; font:#font; width:5" position="0.3 1.10 -3.87" material="color:#ffffff;">
@@ -132,10 +141,11 @@
       <a-cursor color="#ffffff"></a-cursor> 
 
     </a-camera>
-    <a-light type="hemisphere" color="#ffffff" position="10.954 4.600 37.309" light="intensity:0.7;type:point"></a-light>
-    <a-entity position="-33.797 4.600 48.091" light="distance:1;intensity:0.7;type:ambient"></a-entity>
+    <a-light type="hemisphere" color="#ffffff" position="-6.735 90.773 37.309" light="intensity:0.7;type:point"></a-light>
+    <a-entity position="-33.797 10.320 48.091" light="distance:1;intensity:0.5;type:ambient"></a-entity>
+    <!-- <a-entity position="-33.797 4.600 48.091" light="distance:1;intensity:0.7;type:ambient"></a-entity> -->
 
-    <a-sky src="#sky" radius="200" theta-length="90"></a-sky>
+    <a-sky src="#sky" radius="200"></a-sky>
 
   </a-scene>
   <!-- <div class="loading">
